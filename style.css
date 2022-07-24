@@ -11,14 +11,26 @@ body{
     ,#66ffcc, #ff99ff  );
 }
 
+.title{
+    display: grid;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
 .calculator-grid{
     display: grid;
     justify-content: center;
+    padding-top: 0;
     align-content: center;
+    margin-bottom: 50px;
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-
+   
 }
 
 .calculator-grid > button {
@@ -39,7 +51,7 @@ body{
     grid-column: span 2 ;
 }
 
-.output{
+.output{ 
     grid-column: 1 / -1;
     background-color: rgba(0, 0, 0, .70);
     display: flex;
@@ -50,7 +62,6 @@ body{
     word-wrap: break-word ;
     word-break: break-all;
 }
-
 .output .previous-operand{
     color: rgba(255,255,255 .80);
     font-size: 1.5rem;
